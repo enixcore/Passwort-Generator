@@ -1,0 +1,91 @@
+//https://coolors.co/25283d-8f3985-98dfea-07beb8-efd9ce
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap');
+$fontFamily: 'Open Sans', sans-serif;
+
+$backgroundColor: #F1F7EE;
+$fontColor: #C3B59F;
+$inputColor: #668F80;
+$passwordColor: #A0AF84;
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+input 
+    border: 0
+
+body 
+    background-color: $backgroundColor
+    color: $fontColor
+    font-family: $fontFamily
+    font-size: 2rem
+
+header
+    width: 100%
+    line-height: 200px
+    & h1
+        text-align: center
+        text-shadow: 1px 1px 1px #272932
+        & span 
+            font-size: 25px
+            color: $passwordColor
+
+main 
+    & form
+        text-align: center
+        & h3 
+            text-shadow: 1px 1px 1px #272932
+        & input
+            border-bottom: 2px solid #272932
+            font-size: 25px
+            color: $inputColor
+            font-weight: 800
+            background-color: transparent
+            text-align: center
+
+    & button 
+        background-color: transparent
+        margin: 40px auto 0
+        display: block
+        font-size: 30px
+        font-weight: 800
+        padding: 5px 10px
+        border: 4px solid $passwordColor
+        border-radius: 10px
+        color: $passwordColor
+        &:hover
+            color: $backgroundColor
+            background-color: $passwordColor
+            border: 4px solid $backgroundColor
+    & h2 
+        text-align: center
+        margin-bottom: 40px
+    & span#generated
+        display: block
+        text-align: center
+        font-size: 70px
+        color: $passwordColor
+
+footer
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    display: inline-flex
+    justify-content: space-between
+    text-shadow: 1px 1px 1px #272932
+    font-size: 90%
+    ul 
+        display: inline-flex
+        & li
+            list-style: none
+            padding: 8px 13px  
+            & a 
+                color: $fontColor
+                text-decoration: none
+                display: block
+                &:hover 
+                    color: $passwordColor
+    & span 
+        margin-right: 13px

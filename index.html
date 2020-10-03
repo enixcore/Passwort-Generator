@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwort-Generator</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>PASSWORT-GENERATOR <span>v1</span></h1>
+    </header>
+
+    <main>
+        <span id="generated">&nbsp;</span>
+        <form>
+            <h3>Länge des Passwortes:</h3>
+            <input id="length" type="text" placeholder="Gib eine Zahl ein" required>
+            <h3>Wie viele Großbuchstaben:</h3>
+            <input id="uppercaseLetter" type="text" placeholder="Gib eine Zahl ein">
+            <h3>Wie viele Zahlen:</h3>
+            <input id="number" type="text" placeholder="Gib eine Zahl ein">
+            <h3>Wie viele Symbole:</h3>
+            <input id="symbole" type="text" placeholder="Gib eine Zahl ein">
+        </form>
+        <button id="genBtn">Generiere Passwort</button>
+    </main>
+    <script src="./src/js/app.js" type="module"></script>
+</body>
+</html>

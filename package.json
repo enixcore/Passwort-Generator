@@ -1,0 +1,17 @@
+{
+  "name": "password",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "node-sass --include-path scss src/css/style.sass src/css/style.css",
+    "dev": "nodemon src/js/app -x \"npm run watch-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}
